@@ -1,0 +1,151 @@
+.imagem1 img {
+    padding-left: 20px;
+    min-width: 10px;
+}
+.head1 h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    min-width: 10px;
+}
+
+.imagem1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.escolas img {
+    min-width: 10px;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 12%;
+}
+
+.titulo p {
+    font-size: 1.2em;
+    margin-top: 3%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 0px;
+}
+
+.pilares h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 0px;
+    padding-top: 3%;
+}
+
+.pilares p {
+    font-size: 1.2em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 0px;
+}
+
+.escolas h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 0px;
+    padding-top: 3%;
+}
+
+.escolas p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 12%;
+    max-width: 75%;
+    min-width: 0px;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+.titulo2 h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.nomes p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    background-position: 10%;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background-color: #ccc;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(255, 110, 110);
+    border-radius: 5px;
+    transform: all 400ms ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url(./img/mario.jpg);
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.8;
+}
